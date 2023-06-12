@@ -53,43 +53,48 @@ td,th{
 
 <!-- 행<tr>을 먼저 만들고 열<th>,<td>을 만든다 -->
 <table border="1">
-    <!-- <tr> 1행 -->
-<tr>
-    
-        <!-- <th> : 본문을 설명해주는 셀 -->
-    <th>이름</th>
-    <th>주소</th>
-    <th>종류</th>
-</tr>
-<!-- 2행 -->
-<tr>
-<td>네이버</td>
-<td>https://www.naver.com/</td>
-<!-- 2행을 합치기 rowspan -->
-<td rowspan="2">포탈</td>
-</tr>
-
-<!-- 3행 -->
-<tr>
-<td>유튜브 </td>
-<td> https://www.youtube.com/</td>
- 
-</tr>
-<!-- 4행 -->
-<tr>
-    <!-- <td> : 본문(내용물)에 해당하는 셀 -->
-    <td>깃허브 </td>
-    <td>https://github.com/juyeon-Bae/2023-WSM-104</td>
-    <td>개발관련</td>
+        <thead> 
+        <!-- <tr> 1행 -->
+    <tr>
+        
+            <!-- <th> : 본문을 설명해주는 셀 -->
+        <th>이름</th>
+        <th>주소</th>
+        <th>종류</th>
+    </tr>
+    </thead>
+   
+    <tbody> 
+    <!-- 2행 -->
+    <tr>
+    <td>네이버</td>
+    <td>https://www.naver.com/</td>
+    <!-- 2행을 합치기 rowspan -->
+    <td rowspan="2">포탈</td>
     </tr>
 
-<!-- 5행 -->
-<tr>
-    <td colspan="3">자료제공 JYB </td>
+    <!-- 3행 -->
+    <tr>
+    <td>유튜브 </td>
+    <td> https://www.youtube.com/</td>
     
+    </tr>
+    <!-- 4행 --> 
+    <tr>
+        <!-- <td> : 본문(내용물)에 해당하는 셀 -->
+        <td>깃허브 </td>
+        <td>https://github.com/juyeon-Bae/2023-WSM-104</td>
+        <td>개발관련</td>
+        </tr>
+    </tbody>
+<!-- 5행 -->
+<tfoot> 
+<tr>
+    <td colspan="3">자료제공 JYB </td> 
 </tr>
+</tfoot>
 </table>
-
+ 
 </body>
 
 
