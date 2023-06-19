@@ -6,6 +6,12 @@
 /* 태그 선택자 */
 div{
     color: blue;
+    width: 300px;
+    height: 50px;
+    padding: 10px;
+    border: 5px solid black;
+    margin: 10px;
+
 }
 
 /* 클래스 선택자 */
