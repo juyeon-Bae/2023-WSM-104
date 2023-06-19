@@ -1,3 +1,19 @@
-div{
+/*   *=전체*/
+*{
     color: peru;
+}
+
+/* 태그 선택자 */
+div{
+    color: blue;
+}
+
+/* 클래스 선택자 */
+.c {
+    color: pink;
+}
+
+/* id선택자 */
+#i{
+    color: green;
 }
