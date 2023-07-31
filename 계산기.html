@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>계산기</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+        }
+        .계산기 {
+            background-color: #f2f2f2;
+            /* 패딩은 배경색을 적용 */
+            padding: 20px;
+            /* 최대 너비(width) */
+            max-width: 400px;
+            /* 수평적으로 가운데 정렬 */
+            margin: auto;
+            border: solid 2px #ccc;
+            /* 그림자 */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+            /* 외각선을 둥글하게 */
+            border-radius: 5px;
+            margin-top: 40px; 
+        }
+        #결과 {
+            width: 100%;
+            padding: 10px;
+            font-size: 24px;
+            border: none;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3) inset;
+            border-radius: 5px;
+        }
+        .버튼 {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-gap: 10px;
+            margin-top: 20px;
+        }
+
+        button {
+            padding: 10px;
+            font-size: 24px;
+            border: none;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        /* 마우스가 button 요소에 닿았을때 */
+        button:hover {
+            background-color: #ddd;
+        }
+
+        .청소 {
+            background-color: #ff4136;
+            color: #fff;
+        }
+
+        .숫자, .소수 {
+            background-color: #fff;
+            color: #333;
+        }
+
+        .연산자 {
+            background-color: #0074d9;
+            color: #fff;
+        }
+
+        .이퀄 {
+            background-color: #01ff70;
+            grid-row: span 3;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <div class="계산기">
+        <input type="text" id="결과" readonly>
+        <div class="버튼">
+            <button class="청소">청소</button>
+            <button class="연산자">/</button>
+            <button class="연산자">*</button>
+            <button class="연산자">-</button>
+            <button class="숫자">7</button>
+            <button class="숫자">8</button>
+            <button class="숫자">9</button>
+            <button class="연산자">+</button>
+            <button class="숫자">4</button>
+            <button class="숫자">5</button>
+            <button class="숫자">6</button>
+            <button class="이퀄">=</button>
+            <button class="숫자">1</button>
+            <button class="숫자">2</button>
+            <button class="숫자">3</button>
+            <button class="숫자">0</button>
+            <button class="소수">.</button>
+        </div>
+    </div>
+    <script>
+        const buttonEL = document.querySelectorAll("button");
+        const inputEL = document.getElementById("결과");
+
+        for(let i=0; i<buttonEL.length; i++) {
+            buttonEL[i].addEventListener("click", ()=> {
+                const 버튼값 = buttonEL[i].textContent;
+                if(버튼값 == "청소")
+                    inputEL.value = "";
+                else if(버튼값 == "=")
+                    inputEL.value = eval(inputEL.value);
+                else
+                    inputEL.value += 버튼값;
+            })
+        }
+    </script>
+</body>
+</html>
