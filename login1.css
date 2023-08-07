@@ -1,0 +1,72 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-color: antiquewhite;
+
+    /* 가로 세로 중앙정렬 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-container{
+    background-color: white;
+    /* 패딩은 배경색 적용받음 */
+    padding: 30px;
+    border-radius: 5px;
+    width: 300px;
+    box-shadow: 0 0 10px rgb(0, 0,0,0.3);
+    /* height: 100%; */
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+        color: blue;
+        /* 글자를 가운데 정렬(수평) */
+        text-align: center;
+}
+
+input{
+    box-sizing: border-box;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: #ccc solid 1px;
+    border-radius: 5px;
+
+}
+
+#btn{
+    width: 100%;
+    padding: 1opx;
+    background-color: lemonchiffon;
+    color: goldenrod;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+
+/* btn을 갖다 대었을 떼 */
+#btn:hover{
+    background-color: yellow;
+}
+
+.forgot-password{
+    text-align: center;
+    margin-top: 10px;
+
+}
+/*  .forgot-password에 있는 a태그*/
+.forgot-password a{
+    color: skyblue;
+    text-decoration: none;
+}
+
+.forgot-password a:hover{
+    text-decoration: underline;
+}
