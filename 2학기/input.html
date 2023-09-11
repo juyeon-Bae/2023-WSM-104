@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>input 태그</title>
+    </head>
+    <body>
+        <form action="">
+            <!--placeholder : 입력창에 대한 힌트-->
+           <div>  <input type="text" placeholder="id를 입력하세요">
+           </div>
+           <div>
+            <input type="password" placeholder="비밀번호를 입력하세요">
+         </div>
+         <div> 
+            <!-- name으로 radio를 연결시킴 -->
+            <!-- value 나중에 서버연동해 찍먹을 눌르면 찍먹으로 넘어감(값을 넘겨줌) -->
+            <input type="radio" nane="탕수육" value="찍먹">찍먹 
+            <input type="radio" nane="탕수육" value="부먹">부먹
+         </div>
+
+         <div>
+            <input type="checkbox" name="언어" value="HTML">HTML
+            <input type="checkbox" name="언어" value="CSS">CSS
+            <input type="checkbox" name="언어" value="JavaScript">JavaScript
+         </div>
+
+         <div>
+            <input type="submit" value="제출">
+         </div>
+        </form>
+    </body>
+</html>
