@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html  >
+<head>
+    <meta charset="UTF-8">
+    <style>
+        div{
+            font-family: 'Courier New', Courier, monospace;
+            line-height: 60px;
+        }
+        .size-l{
+            font-size: 50px;
+        }
+
+        .size-m{
+            font-size: 30px;
+        }
+
+        .size-s{
+            font-size: 20px;
+        }
+
+        .v-h{
+            
+            visibility: hidden;
+        }
+        .o{
+            opacity: 0.6;
+        }
+
+        .t-d{
+             
+            text-decoration: underline;
+            text-decoration: line-through;
+            text-decoration: overline;
+        }
+
+        .t-a-c{
+            text-align: center;
+        }
+
+        .bg{
+            border: 1px solid black;
+            width: 60vh;
+            height: 65vh;
+            background-image: url('1.jpg');
+            background-repeat: no-repeat;
+            background-repeat: repeat-x;
+            background-repeat: repeat-y;
+            background-repeat: repeat;
+            
+        }
+    </style>
+</head>
+<body>
+    <!-- 클래스에 띄어쓰기를 하면 여러 선택자를 적용시킬 수 있음 -->
+    <div class="size-l o t-a-c">하나</div>
+    <div class="size-m v-h" >둘</div>
+    <div class="size-s t-d">셋</div>
+    <div class="bg"></div>
+     
+    <!-- v-h : 보이지 ㅇ낳아도 요소의 공간은 차지한다. -->
+    <!-- .t-d : 선택자 우선순위가 같은 경우, 최근것만 적용 -->
+
+</body>
+</html>
