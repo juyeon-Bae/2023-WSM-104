@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>가상선택자</title>
+    <style>
+        /*마우스에 갖다 댔을때*/
+        a :hover{
+            color: red;
+            text-decoration: none;
+
+        }
+        /*버튼을 눌렀을 때*/
+        button:active{
+            background-color: brown;
+        }
+
+        /*포커스에 맞춸을 때*/
+       input:focus{
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <p>
+        <a href="">마우스를 올리면 색상과 밑줄이 변경</a>
+    </p>
+
+    <p>
+        <button>버튼 클릭시 배경색 변경</button>
+    </p>
+
+    <p>
+        <input type="text" placeholder="포커스하면 색 변경">
+    </p>
+
+</body>
+</html>
