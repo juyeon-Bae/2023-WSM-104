@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html >
+<head>
+   
+    <title>box-sizing</title>
+    <style>
+            div{
+                border: 1px solid black;
+                width: 200px;
+                height: 100px;
+
+                /*content box를 하면 전체너비는= width + 좌우 패딩+ 좌우 보더*/
+                /*border box를 하면 박스와 전체 너비가 width(200)으로 고정됨*/
+                box-sizing: border-box;
+
+            }
+
+            .a{
+                padding: 20px;
+            }
+
+            .b{
+                padding-left: 10px;
+            }
+    </style>
+</head>
+<body>
+  <div class="a"></div>
+  <div class="b"></div>
+  
+</body>
+</html>
