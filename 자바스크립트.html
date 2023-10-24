@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript</title>
+</head>
+<body>
+    <div id="mind">js기초</div>
+
+    <!-- 자바스크립트는 body 끝부분에    -->
+    <script>
+        let a; //변수의 선언(데이터를 저장할 메모리 공간을 만듦)
+        let b = 3; //변수의 선언과 동시에 초기화
+        let c = "헬로"; //자료형에 상관없이 let을 쓰자
+        let d = [10,20,30,40,50]; //배열
+
+        // 콘솔화면에 출력
+        console.log(a);
+        console.log(b);
+        console.log(c);
+        
+        // 배열의 출력
+        for(let i=0; i<d.length; i++)
+        console.log(d[i]);
+
+        console.log(d); //배열을 편하게 출력
+        
+        //id가 mind인 요소를 CSS color를 green으로
+        document.getElementById("mind").style.color = "green";
+    </script>
+
+</body>
+</html>
